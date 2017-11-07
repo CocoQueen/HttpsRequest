@@ -7,7 +7,7 @@ import javax.net.ssl.X509TrustManager;
 
 /**
  * Created by coco on 2017/11/7.
- * 对证书进行校验
+ * 不安全的
  */
 
 public class MyX509TrustManagerUnSafe implements X509TrustManager {

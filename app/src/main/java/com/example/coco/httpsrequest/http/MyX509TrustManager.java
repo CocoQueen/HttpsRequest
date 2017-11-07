@@ -11,6 +11,7 @@ import javax.net.ssl.X509TrustManager;
 
 /**
  * Created by coco on 2017/11/7.
+ * 安全的
  * 对证书进行校验
  */
 

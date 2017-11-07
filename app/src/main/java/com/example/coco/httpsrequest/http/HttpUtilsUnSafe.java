@@ -45,6 +45,7 @@ public class HttpUtilsUnSafe {
                     SSLContext tls = SSLContext.getInstance("TLS");
                     MyX509TrustManagerUnSafe manager;
                     manager = new MyX509TrustManagerUnSafe();
+//                    定义一个 TrustManagerFactory,让这个工厂生成TrustManager数组
                     TrustManager[]trustManagers={manager};
                     tls.init(null,trustManagers,new SecureRandom());
                     SSLSocketFactory factory = tls.getSocketFactory();

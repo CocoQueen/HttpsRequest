@@ -73,6 +73,7 @@ public class HttpUtilsSafe {
                     conn.setReadTimeout(5000);
                     conn.setDoInput(true);
                     conn.setDoOutput(true);
+                    conn.connect();
                     InputStream is = conn.getInputStream();
                     StringBuilder sb=new StringBuilder();
                     int flag;

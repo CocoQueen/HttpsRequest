@@ -49,12 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void Failed(final Exception e) {
-//                handler.post(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-//                    }
-//                });
+
                 Log.e(TAG, "Failed: "+e.getMessage() );
             }
         });

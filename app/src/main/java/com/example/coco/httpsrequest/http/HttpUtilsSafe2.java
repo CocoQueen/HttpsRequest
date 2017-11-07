@@ -59,11 +59,11 @@ public class HttpUtilsSafe2 {
                     instance.load(null);
                     instance.setCertificateEntry("srca",getX509Certificate(context));
                     String defaultAlgorithm = TrustManagerFactory.getDefaultAlgorithm();//获取默认算法
-                    TrustManagerFactory instance1 = TrustManagerFactory.getInstance(defaultAlgorithm);
-                    instance1.init(instance);
+                    TrustManagerFactory tmf = TrustManagerFactory.getInstance(defaultAlgorithm);
+                    tmf.init(instance);
 
 
-                    TrustManager[]trustManagers=instance1.getTrustManagers();
+                    TrustManager[]trustManagers=tmf.getTrustManagers();
                     tls.init(null,trustManagers,new SecureRandom());
                     //ssl工厂
                     SSLSocketFactory factory = tls.getSocketFactory();
